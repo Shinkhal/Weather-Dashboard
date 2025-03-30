@@ -6,7 +6,6 @@ export default function WeatherCard({ forecast }) {
   if (!forecast?.forecast?.city) {
     return <p className="text-gray-500 dark:text-gray-300 text-center mt-4">No weather data available</p>;
   }
-
   const { today, forecast: forecastData } = forecast;
   const dailyForecasts = forecastData.list.filter((item) =>
     item.dt_txt.includes("12:00:00")
@@ -17,8 +16,6 @@ export default function WeatherCard({ forecast }) {
       <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center">
         📍 {forecastData.city.name}, {forecastData.city.state}, {forecastData.city.country}
       </h2>
-
-      {/* 🌤️ Today's Weather */}
       <div className="bg-blue-200 dark:bg-gray-800 text-gray-900 dark:text-white p-6 rounded-xl shadow-lg w-full max-w-md mt-4 border border-emerald-500 dark:border-emerald-700">
         <div className="text-center mt-3">
           <p className="text-4xl font-bold">{today.main.temp}°C</p>
@@ -39,7 +36,6 @@ export default function WeatherCard({ forecast }) {
         </div>
       </div>
 
-      {/* 📅 5-Day Forecast */}
       <h3 className="text-xl font-semibold text-emerald-700 dark:text-emerald-300 mt-8">5-Day Forecast</h3>
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
         {dailyForecasts.map((day, index) => (

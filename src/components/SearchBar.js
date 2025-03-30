@@ -54,7 +54,6 @@ export default function SearchBar({ onSearch }) {
   return (
     <div className="flex flex-col items-center w-full mt-6">
       <div className="flex items-center space-x-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 shadow-lg px-4 py-2 rounded-xl w-full max-w-lg">
-        {/* 🌍 City Input */}
         <Input
           type="text"
           placeholder="Enter city name..."
@@ -63,8 +62,6 @@ export default function SearchBar({ onSearch }) {
           onKeyDown={handleKeyDown}
           className="flex-1 bg-transparent border-none focus:ring-0 placeholder-gray-600 dark:placeholder-gray-300 text-gray-900 dark:text-white text-lg"
         />
-
-        {/* 🔍 Search Button */}
         <Button
           onClick={fetchWeather}
           disabled={loading || !city.trim()} 
