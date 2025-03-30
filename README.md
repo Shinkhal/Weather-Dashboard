@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌤️ Weather Dashboard  
 
-## Getting Started
+A **modern weather dashboard** built with **Next.js** and **ShadCN** that provides real-time and **5-day weather forecasts** for any city. The app fetches data from **OpenWeatherMap API** and saves recent searches for easy access.
 
-First, run the development server:
+---
 
+## 📸 Preview  
+*(Add a screenshot or GIF of your app here if possible!)*  
+
+---
+
+## 🚀 Features  
+✅ **Search for any city** worldwide and get weather details.  
+✅ **Current weather & 5-day forecast** displayed in a user-friendly UI.  
+✅ **Recent search history** (last 5 cities) saved using `localStorage`.  
+✅ **Responsive UI** with **ShadCN** for a clean, modern look.  
+✅ **Optimized API calls** using `fetch()` and efficient state management.  
+
+---
+
+## 🛠️ Tech Stack  
+- **Frontend**: Next.js, React, Tailwind CSS  
+- **UI Components**: ShadCN, Lucide Icons  
+- **API**: [OpenWeatherMap 5-Day Weather Forecast API](https://openweathermap.org/forecast5)  
+- **State Management**: React Hooks (`useState`, `useEffect`)  
+- **Storage**: LocalStorage (for recent searches)  
+
+---
+
+## 📦 Installation & Setup  
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/Shinkhal/Weather-Dashboard.git
+cd weather-dashboard
+```
+### 2️⃣ Install Dependencies  
+```bash
+npm install
+```
+### 3️⃣ Get Your OpenWeatherMap API Key  
+- Sign up on [OpenWeatherMap](https://openweathermap.org/api)  
+- Generate a **free API key**  
+
+### 4️⃣ Create a `.env.local` file  
+```bash
+NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here
+```
+> **Note:** Use `NEXT_PUBLIC_` prefix in Next.js for client-side environment variables.
+
+### 5️⃣ Run the Project  
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+> The app will run at **http://localhost:3000**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🎯 Usage  
+1️⃣ **Search for a city** using the input field.  
+2️⃣ **View current weather** (temperature, humidity, wind speed, etc.).  
+3️⃣ **Check the 5-day forecast** with detailed weather info.  
+4️⃣ **Recent searches** (last 5 cities) are stored for reference.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Project Structure  
+```
+📦 weather-dashboard
+ ┣ 📂 components
+ ┃ ┣ 📜 Footer.js
+ ┃ ┣ 📜 SearchBar.js
+ ┃ ┣ 📜 WeatherCard.js
+ ┣ 📂 app
+ ┣ 📂 lib
+ ┣ 📜 .env.local (ignored in Git)
+ ┣ 📜 package.json
+ ┣ 📜 next.config.js
+ ┣ 📜 README.md
+```
+- `SearchBar.js` → Handles input & API calls  
+- `WeatherCard.js` → Displays weather details  
+- `localStorage` → Stores recent searches  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 To-Do / Future Enhancements  
+🔹 **Allow users to click recent searches** to re-fetch data.  
+🔹 **Implement dark/light mode toggle.**  
+🔹 **Add location-based weather detection.**  
+🔹 **Improve animations & loading states.**  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📝 License  
+This project is **open-source** and free to use. Feel free to contribute! 😊  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Contact  
+💻 **Developer:** Shinkhal Sinha  
+📧 Email: [shinkhalsinha@gmail.com]  
+🔗 GitHub: [Shinkhal](https://github.com/Shinkhal)  
+
