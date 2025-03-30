@@ -1,30 +1,36 @@
 # 🌤️ Weather Dashboard  
 
-A **modern weather dashboard** built with **Next.js** and **ShadCN** that provides real-time and **5-day weather forecasts** for any city. The app fetches data from **OpenWeatherMap API** and saves recent searches for easy access.
+A **modern weather dashboard** built with **Next.js**, **ShadCN**, and **Tailwind CSS**. The app provides real-time **current weather** and **5-day forecasts** using **OpenWeatherMap API**. 🌍  
+
+🔹 **Dark/Light Mode Toggle** 🌙 ☀️  
+🔹 **Recent Search History** (last 5 searches)  
+🔹 **Responsive & Modern UI**  
 
 ---
 
 ## 📸 Preview  
-![image](https://github.com/user-attachments/assets/c4b9a6ef-a045-4a78-9e85-62f0e2a3f94a)
- 
- 
+![image](https://github.com/user-attachments/assets/bfae2438-09a3-472c-952d-c0facb3c6fc1)
+
+
 ---
 
 ## 🚀 Features  
-✅ **Search for any city** worldwide and get weather details.  
-✅ **Current weather & 5-day forecast** displayed in a user-friendly UI.  
-✅ **Recent search history** (last 5 cities) saved using `localStorage`.  
-✅ **Responsive UI** with **ShadCN** for a clean, modern look.  
-✅ **Optimized API calls** using `fetch()` and efficient state management.  
+✅ **🌎 Search for any city** and get detailed weather data.  
+✅ **🌡️ Current weather & 5-day forecast** with temperature, humidity, wind speed, etc.  
+✅ **📜 Recent Searches** (last 5 cities stored using `localStorage`).  
+✅ **🎨 Dark/Light Mode Toggle** with `next-themes`.  
+✅ **💨 Optimized API calls** for fast performance.  
+✅ **📱 Responsive UI** using **ShadCN** and **Tailwind CSS**.  
 
 ---
 
 ## 🛠️ Tech Stack  
-- **Frontend**: Next.js, React, Tailwind CSS  
-- **UI Components**: ShadCN, Lucide Icons  
-- **API**: [OpenWeatherMap 5-Day Weather Forecast API](https://openweathermap.org/forecast5)  
-- **State Management**: React Hooks (`useState`, `useEffect`)  
-- **Storage**: LocalStorage (for recent searches)  
+- **🌐 Framework**: Next.js (React)  
+- **🎨 UI Components**: ShadCN, Lucide Icons  
+- **🌍 Weather API**: [OpenWeatherMap](https://openweathermap.org/forecast5)  
+- **⚡ State Management**: React Hooks (`useState`, `useEffect`)  
+- **🗄️ Storage**: LocalStorage (recent searches)  
+- **🌙 Theme Switching**: `next-themes`  
 
 ---
 
@@ -52,15 +58,16 @@ NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here
 ```bash
 npm run dev
 ```
-> The app will run at **http://localhost:3000**
+> The app will be available at **http://localhost:3000**
 
 ---
 
-## 🎯 Usage  
-1️⃣ **Search for a city** using the input field.  
-2️⃣ **View current weather** (temperature, humidity, wind speed, etc.).  
-3️⃣ **Check the 5-day forecast** with detailed weather info.  
-4️⃣ **Recent searches** (last 5 cities) are stored for reference.  
+## 🎯 How to Use  
+1️⃣ **🔍 Search for a city** using the input field.  
+2️⃣ **📊 View current weather** (temperature, humidity, wind speed, etc.).  
+3️⃣ **📅 Check the 5-day forecast** with daily weather data.  
+4️⃣ **📝 Recent Searches** (last 5 cities) appear for quick access.  
+5️⃣ **🌙 Toggle between Light/Dark Mode** using the button in the navbar.  
 
 ---
 
@@ -69,8 +76,10 @@ npm run dev
 📦 weather-dashboard
  ┣ 📂 components
  ┃ ┣ 📜 Footer.js
+ ┃ ┣ 📜 Navbar.js
  ┃ ┣ 📜 SearchBar.js
  ┃ ┣ 📜 WeatherCard.js
+ ┃ ┣ 📜 ThemeToggle.js  <-- NEW Theme Toggle Component
  ┣ 📂 app
  ┣ 📂 lib
  ┣ 📜 .env.local (ignored in Git)
@@ -78,17 +87,18 @@ npm run dev
  ┣ 📜 next.config.js
  ┣ 📜 README.md
 ```
-- `SearchBar.js` → Handles input & API calls  
+- `SearchBar.js` → Handles user input & API calls  
 - `WeatherCard.js` → Displays weather details  
-- `localStorage` → Stores recent searches  
+- `Navbar.js` → Contains the **theme toggle button**  
+- `ThemeToggle.js` → Handles dark/light mode switching  
 
 ---
 
-## 📌 To-Do / Future Enhancements  
-🔹 **Allow users to click recent searches** to re-fetch data.  
-🔹 **Implement dark/light mode toggle.**  
-🔹 **Add location-based weather detection.**  
-🔹 **Improve animations & loading states.**  
+## 📌 Future Enhancements  
+🔹 **📍 Allow users to click recent searches** to fetch data instantly.  
+🔹 **📍 Add location-based weather detection.**  
+🔹 **✨ Improve animations & loading states.**  
+🔹 **📊 Enhance UI with more weather details (UV Index, air quality, etc.).**  
 
 ---
 
@@ -101,4 +111,3 @@ This project is **open-source** and free to use. Feel free to contribute! 😊
 💻 **Developer:** Shinkhal Sinha  
 📧 Email: [shinkhalsinha@gmail.com]  
 🔗 GitHub: [Shinkhal](https://github.com/Shinkhal)  
-
