@@ -5,7 +5,8 @@ A **modern weather dashboard** built with **Next.js** and **ShadCN** that provid
 ---
 
 ## 📸 Preview  
-*(Add a screenshot or GIF of your app here if possible!)*  
+![image](https://github.com/user-attachments/assets/c4b9a6ef-a045-4a78-9e85-62f0e2a3f94a)
+ 
 
 ---
 
